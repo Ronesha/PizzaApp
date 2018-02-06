@@ -1,0 +1,130 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+
+body{
+background: #D3CCE3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.box {
+	height: 70vh;
+	background: #fff;
+	color: #888888;
+	margin: 20px 60px;
+	padding: 30px 60px;
+	width: 100%;
+	text-align: center;
+	box-shadow: 2px 2px;
+}
+
+#one{
+	width: 100%;
+}
+
+
+#two {
+	width: 100%;
+}
+
+#three {
+	width: 100%;
+}
+
+#four {
+	width: 100%;
+}  
+
+
+
+.title{
+	font-family: 'Rammetto One', cursive;
+}
+
+.bodywrap{
+	width: 85%;
+	margin:25px auto;
+
+}
+
+
+.totalbox {
+   height: 18vh;
+	background: #fff;
+	color: #888888;
+	margin: 20px auto;
+	padding: 30px 60px;
+	width: 50%;
+	text-align: center;
+	box-shadow: 2px 2px;
+
+}
+
+table {
+	margin: 40px 40px;
+}
+
+table tr{
+		margin: 40px 40px;
+
+}
+
+/*Modal*/
+
+
+.modal{
+	
+	z-index: 1;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+
+}
+
+.modal-content{
+	background-color:#f4f4f4;
+	margin:10% auto;
+	padding: 20px;
+	width: 70%;
+	box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2);
+}
+
+.closeBtn{
+	color: #ccc;
+	float: right;
+	font-size: 30px;
+}
+
+.closeBtn:hover, .closeBtn:focus{
+	color:#000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+#PizzaCart {
+	overflow-y: scroll;
+	height: auto;
+}
+
+#PizzaCart ul {
+	
+	padding: 10px 10px;
+
+}
+
+#PizzaCart li {
+	list-style: none;
+	background:#ccc;
+	color: #fff;
+	font-size: 1.4rem;
+
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pizza app</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
+</head>
+<body>
+   <div class="container" id="top">
+         <h1 class="text-center title"> Sammy's Pizza</h1>
+         <div class="totalbox">
+            <span id="total">Total:</span><br>
+       <button type="submit" class="btn btn-danger" id="view">View Total Order</button>
+         <div id="simpleModal" class="modal">
+    	<div class="modal-content">
+    	  <span class="closeBtn">&times;</span>
+    	  <p>Your Total Order</p>
+    	   <div id="PizzaCart"></div>
+    	  <button id="submitInfo">Close</button>
+    	</div>
+     </div>
+  </div>
+  
+   <!--Cheese-->
+   <div class="bodywrap">
+   	<div class="row">
+   		<div class="col-6">
+   	  <div class="cheese">
+        <div class="box" id="one">
+        	<h1>Cheese Pizza</h1>
+        	<span class="price">$</span>
+        	<select class="form-control" id="crust">
+            <option>Hand Tossed Pizza</option>
+            <option>Thin N Crispy</option>
+            <option>Original Pan</option>
+            <option>Stuff Crust</option>
+           </select>
+
+            <select class="form-control" id="size">
+            <option>Large</option>
+            <option>Medium</option>
+            <option>Small</option>
+            <option>Personal</option>
+           </select>
+
+           <div class="form-row">
+             <div class="form-group col-md-3">
+                <select class="form-control" id="quantity">
+                	<option>1</option>
+                	<option>2</option>
+                	<option>3</option>
+                	<option>4</option>
+                	<option>5</option>
+                	<option>6</option>
+                	<option>7</option>
+                	<option>8</option>
+                	<option>9</option>
+                	<option>10</option>
+                </select>
+             </div>
+               <div class="form-group col-md-9">
+               	<button type="submit" class="btn btn-danger add">Add To Order</button>
+               	<img src="img/cheese.png" class="img-fluid">
+           </div>
+        </div>
+      </div>
+     </div>
+    </div>
+      <!--Pepperoni-->
+         <div class="col-6">
+          <div class="pep">
+            <div class="box" id="two">
+        	<h1>Pepperoni Pizza</h1>
+        	<span class="price">$</span>
+        	<select class="form-control" id="crust">
+            <option>Hand Tossed Pizza</option>
+            <option>Thin N Crispy</option>
+            <option>Original Pan</option>
+            <option>Stuff Crust</option>
+           </select>
+
+            <select class="form-control" id="size">
+            <option>Large</option>
+            <option>Medium</option>
+            <option>Small</option>
+            <option>Personal</option>
+           </select>
+
+           <div class="form-row">
+             <div class="form-group col-md-3">
+                <select class="form-control" id="quantity">
+                	<option>1</option>
+                	<option>2</option>
+                	<option>3</option>
+                	<option>4</option>
+                	<option>5</option>
+                	<option>6</option>
+                	<option>7</option>
+                	<option>8</option>
+                	<option>9</option>
+                	<option>10</option>
+                </select>
+             </div>
+               <div class="form-group col-md-9">
+               	<button type="submit" class="btn btn-danger add">Add To Order</button>
+               	<img src="img/pepperoni.jpg" class="img-fluid mt-4">
+              </div>
+           </div>
+         </div>
+        </div>
+      </div>
+  </div>
+
+
+      <!--MeatLovers-->
+       <div class="row">
+       	<div class="col-6">
+         <div class="meat">
+          <div class="box" id="three">
+        	<h1>Meatlover's Pizza</h1>
+        	<span class="price">$</span>
+        	<select class="form-control" id="crust">
+            <option>Hand Tossed Pizza</option>
+            <option>Thin N Crispy</option>
+            <option>Original Pan</option>
+            <option>Stuff Crust</option>
+           </select>
+
+            <select class="form-control" id="size">
+            <option>Large</option>
+            <option>Medium</option>
+            <option>Small</option>
+            <option>Personal</option>
+           </select>
+
+           <div class="form-row">
+             <div class="form-group col-md-3">
+                <select class="form-control" id="quantity">
+                	<option>1</option>
+                	<option>2</option>
+                	<option>3</option>
+                	<option>4</option>
+                	<option>5</option>
+                	<option>6</option>
+                	<option>7</option>
+                	<option>8</option>
+                	<option>9</option>
+                	<option>10</option>
+                </select>
+             </div>
+               <div class="form-group col-md-9">
+               	<button type="submit" class="btn btn-danger add">Add To Order</button>
+               	<img src="img/meat.jpg" class="img-fluid mt-4">
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+      <!--Supreme-->
+         <div class="col-6">
+          <div class="supreme">
+          <div class="box" id="four">
+        	<h1>Supreme Pizza</h1>
+        	<span class="price">$</span>
+        	<select class="form-control">
+            <option>Hand Tossed Pizza</option>
+            <option>Thin N Crispy</option>
+            <option>Original Pan</option>
+            <option>Stuff Crust</option>
+           </select>
+
+            <select class="form-control">
+            <option>Large</option>
+            <option>Medium</option>
+            <option>Small</option>
+            <option>Personal</option>
+           </select>
+
+           <div class="form-row">
+             <div class="form-group col-md-3">
+                <select class="form-control">
+                	<option>1</option>
+                	<option>2</option>
+                	<option>3</option>
+                	<option>4</option>
+                	<option>5</option>
+                	<option>6</option>
+                	<option>7</option>
+                	<option>8</option>
+                	<option>9</option>
+                	<option>10</option>
+                </select>
+             </div>
+               <div class="form-group col-md-9">
+               	<button type="submit" class="btn btn-danger add">Add To Order</button>
+               	<img src="img/supreme.jpg" class="img-fluid mt-4">
+              </div>
+            </div>
+         </div>
+        </div>
+       </div>
+   </div>
+</div>
+</div>
+
+
+    </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
