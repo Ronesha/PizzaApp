@@ -29,15 +29,30 @@ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, F
 
 #two {
 	width: 100%;
+	height: auto;
 }
 
-#three {
-	width: 100%;
+#two #fullList {
+	margin: 40px auto;
 }
 
-#four {
-	width: 100%;
-}  
+#two #fullList li:first-child{
+	font-weight: bold;
+	background-color: #D00000;
+	color: #fff; 
+}
+
+#two #fullList li:nth-child(2){
+	font-style: italic;
+	font-weight: bold;
+}
+
+
+#two #fullList li {
+	list-style: none;
+	border-bottom: 1px solid #ccc;
+	margin: 10px auto;
+}
 
 
 
@@ -83,7 +98,7 @@ table tr{
     top:0;
     height: 100%;
     width: 100%;
-    overflow-y: scroll;
+  
     background-color: rgba(0,0,0,0.5);
     display: none;
 
@@ -93,13 +108,13 @@ table tr{
 	background-color:#f4f4f4;
 	margin:10% auto;
 	padding: 20px;
-	width: 70%;
+	width: 30%;
 	box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2);
 }
 
 .closeBtn{
 	color: #ccc;
-	float: right;
+
 	font-size: 30px;
 }
 
@@ -109,22 +124,14 @@ table tr{
 	cursor: pointer;
 }
 
-
-#PizzaCart {
-	overflow-y: scroll;
-	height: auto;
+#submitInfo{
+	width: 30%;
+	margin: 5px auto;
 }
 
-#PizzaCart ul {
-	
-	padding: 10px 10px;
-
+#cancelInfo{
+	width: 30%;
+	margin: 5px auto;
 }
 
-#PizzaCart li {
-	list-style: none;
-	background:#ccc;
-	color: #fff;
-	font-size: 1.4rem;
 
-}

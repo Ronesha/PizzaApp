@@ -6,49 +6,53 @@ let btn = document.querySelectorAll('.add'); //Button you press to add order(fou
 
 
 
-  //event Listeners
+	//event Listeners
 
-   
-   //values
-   	for(var i = 0; i < btn.length; i++) {
-   	   btn[i].addEventListener('click', function(e){
-       var x = 0;
-       var size = document.getElementById('size').value;
-       const crust = document.getElementById('crust').value;
-       const quantity = document.getElementById('quantity').value;
-  
-	  //Instantiate pizza
+	 
+	 //values
+		for(var i = 0; i < btn.length; i++) {
+			 btn[i].addEventListener('click', function(e){
+			 
+			 var size = document.querySelectorAll('.size').value;
+			 var type = 'Cheese';
+			 var crust = document.querySelectorAll('.crust').value;
+			 var quantity = document.querySelectorAll('.quantity').value;
 
-         const cheese = new Pizza(size, crust, quantity, total);
-        
-        
-       
-     //Instantiate UI
-        const ui = new UI();
-      
+				
+		//Instantiate pizza
 
-      //add to order
-       ui.addPizzaToOrder(cheese);
+	 const cheese = new Pizza(type, size, crust, quantity, total);
+				
+				
+			 
+		 //Instantiate UI
+				const ui = new UI();
+			
 
+			//add to order
+			 ui.addPizzaToOrder(cheese);
+ 
 
-   	    e.preventDefault();
+				e.preventDefault(e);
 
-   	})}
-  
+		})}
+	
 
 
 
 //Pizza Object Constructor
 
-function Pizza(size, crust, quantity, total) {
-	this.size = size
+function Pizza(type, size, crust, quantity, total) {
+	
+	this.type = type;
+	this.size = size;
 	this.crust = crust;
 	this.quantity = quantity;
 	this.total = quantity * 12;
  
-   
+	 
  }
-  
+	
 
 
 
@@ -59,22 +63,22 @@ function Pizza(size, crust, quantity, total) {
 
 
  UI.prototype.addPizzaToOrder = function(cheese){
-       const list = document.getElementById('orderList');
-     //create li
-     const content = document.createElement('ul');
-     content.innerHTML = `
-       
-       <li>${cheese.size}</li>
-       <li>${cheese.crust}</li>
-       <li> Number of pizzas:${cheese.quantity}</li>
-       <li> Total Price:<i class="fas fa-dollar-sign"></i>${cheese.total}</li>
+			 const list = document.getElementById('orderList');
+		 //create li
+		 const content = document.createElement('ul');
+		 content.innerHTML = `
+			 <li>${cheese.type}</li>
+			 <li>${cheese.size}</li>
+			 <li>${cheese.crust}</li>
+			 <li> Number of pizzas:${cheese.quantity}</li>
+			 <li> Total Price:<i class="fas fa-dollar-sign"></i>${cheese.total}</li>
 
-      `
-      pizzaCart.appendChild(content);
-      console.log(pizzaCart);
+			`
+			pizzaCart.appendChild(content);
+			console.log(pizzaCart);
 
 
-     
+		 
 
  }
 
